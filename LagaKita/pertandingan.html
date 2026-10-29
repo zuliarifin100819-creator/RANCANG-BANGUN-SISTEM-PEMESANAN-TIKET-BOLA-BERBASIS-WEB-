@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LagaKita | Pertandingan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">LagaKita</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+      <a class="nav-link" href="index.html">Beranda</a>
+      <a class="nav-link active" href="pertandingan.html">Pertandingan</a>
+    </nav>
+  </header>
+  <main>
+    <section class="matches-hero">
+      <p class="eyebrow">JADWAL SIMULASI 2026</p>
+      <h1>Daftar Pertandingan</h1>
+      <p>Pilih pertandingan untuk melihat jadwal, lokasi, dan harga tiket simulasi.</p>
+    </section>
+    <section class="matches-content">
+      <div class="filter-bar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="match-search" placeholder="Cari tim atau stadion" aria-label="Cari tim atau stadion"></label>
+        <label class="select-wrap"><span class="sr-only">Pilih kompetisi</span><select id="league-filter"><option value="all">Semua kompetisi</option><option value="Liga Simulasi">Liga Simulasi</option><option value="Piala Nusantara">Piala Nusantara</option></select></label>
+        <span class="match-total"><span id="match-count">04</span> pertandingan</span>
+      </div>
+      <div class="match-list" id="all-matches" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><h2>Pertandingan tidak ditemukan</h2><p>Coba kata kunci atau kompetisi yang lain.</p></div>
+      <p class="disclaimer">Semua informasi pertandingan dan harga tiket pada halaman ini adalah data contoh.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>LagaKita · Proyek Kelompok 4</span><span>Data simulasi, bukan layanan tiket resmi</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
