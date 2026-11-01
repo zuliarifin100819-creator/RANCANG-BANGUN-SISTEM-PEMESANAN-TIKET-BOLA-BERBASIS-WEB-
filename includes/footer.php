@@ -1,0 +1,1 @@
+<footer class="border-top py-4 mt-5"><div class="container small text-muted d-flex justify-content-between"><span>© <?= date('Y') ?> LagaKita</span><span>Pesan tiket, dukung timmu.</span></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="assets/js/app.js"></script>
