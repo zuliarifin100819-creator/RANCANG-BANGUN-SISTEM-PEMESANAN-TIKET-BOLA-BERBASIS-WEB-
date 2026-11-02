@@ -74,10 +74,10 @@ Pembagian berikut untuk kelompok beranggotakan empat orang. Ganti **Anggota 1–
 
 | Anggota | Tanggung jawab | Hasil kerja |
 |---|---|---|
-| Anggota 1 — Tampilan | Mengatur navigasi, tata letak, CSS, dan tampilan responsif halaman. | Beranda, jadwal pertandingan, dan tampilan yang konsisten. |
-| Anggota 2 — Database | Menyiapkan database, tabel pertandingan dan kategori tiket, serta data contoh. | `database/lagakita.sql` dan data jadwal/tiket. |
-| Anggota 3 — Pemesanan | Membuat koneksi PHP ke MySQL, validasi formulir, penyimpanan pesanan, dan pengurangan stok. | `includes/db.php`, `pesan.php`, serta alur penyimpanan. |
-| Anggota 4 — Pengujian dan dokumentasi | Mencoba alur aplikasi, mencatat perbaikan, menyusun panduan, dan menyiapkan demo. | Pengujian, README, dan penjelasan presentasi. |
+| Zuli Arifin — Tampilan | Mengatur navigasi, tata letak, CSS, dan tampilan responsif halaman. | Beranda, jadwal pertandingan, dan tampilan yang konsisten. |
+| M.Maulfi fata Al Khair — Database | Menyiapkan database, tabel pertandingan dan kategori tiket, serta data contoh. | `database/lagakita.sql` dan data jadwal/tiket. |
+| Nafran julian — Pemesanan | Membuat koneksi PHP ke MySQL, validasi formulir, penyimpanan pesanan, dan pengurangan stok. | `includes/db.php`, `pesan.php`, serta alur penyimpanan. |
+| Abadi — Pengujian dan dokumentasi | Mencoba alur aplikasi, mencatat perbaikan, menyusun panduan, dan menyiapkan demo. | Pengujian, README, dan penjelasan presentasi. |
 
 ### Pekerjaan bersama
 
