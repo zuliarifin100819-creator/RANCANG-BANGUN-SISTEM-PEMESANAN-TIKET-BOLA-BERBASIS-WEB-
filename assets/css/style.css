@@ -1,1 +1,446 @@
 :root{--green:#0c503d;--lime:#d5f36a}body{color:#17231f;background:#fcfdfb}.navbar-brand{letter-spacing:-.04em}.brand-mark{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--green);color:white}.hero{background:linear-gradient(110deg,rgba(7,45,34,.96),rgba(7,45,34,.72)),radial-gradient(circle at 85% 25%,#4f9270,#113f32);color:white;padding:65px 0}.hero h1{letter-spacing:-.04em}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.13em;color:#47705e}.match-card{border:1px solid #e4ebe6;border-radius:16px;box-shadow:0 8px 26px rgba(20,53,39,.04)}.match-card:hover{transform:translateY(-2px);transition:transform .2s}.btn-warning{--bs-btn-bg:var(--lime);--bs-btn-border-color:var(--lime);--bs-btn-hover-bg:#c4e451}.price{font-size:1.35rem;font-weight:750}
+
+/* =================================
+   LAGAKITA - MODERN FOOTBALL DESIGN
+================================= */
+
+.lk-body {
+    background: #f5f7fa;
+    color: #172033;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* HERO */
+
+.lk-hero {
+    min-height: 570px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, rgba(8,18,35,.97), rgba(8,18,35,.76)),
+        url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1800&q=85')
+        center/cover no-repeat;
+    color: white;
+}
+
+.lk-hero .min-vh-75 {
+    min-height: 570px;
+}
+
+.lk-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 50%, rgba(34,197,94,.13), transparent 40%);
+}
+
+.lk-label {
+    display: inline-block;
+    background: rgba(34,197,94,.14);
+    color: #6ee7a0;
+    padding: 10px 17px;
+    border: 1px solid rgba(110,231,160,.35);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.lk-hero-title {
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.lk-hero-title span {
+    color: #4ade80;
+}
+
+.lk-hero-desc {
+    max-width: 550px;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.lk-btn-primary {
+    background: #22c55e;
+    color: #082416;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    transition: .3s;
+}
+
+.lk-btn-primary:hover {
+    background: #16a34a;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.lk-btn-outline {
+    color: white;
+    border: 1px solid rgba(255,255,255,.5);
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.lk-btn-outline:hover {
+    background: white;
+    color: #172033;
+}
+
+.lk-hero-info {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.lk-hero-info h4 {
+    color: #4ade80;
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.lk-hero-info small {
+    color: #cbd5e1;
+}
+
+.lk-floating-card {
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 320px;
+    margin-left: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,.2);
+}
+
+.lk-card-icon {
+    font-size: 35px;
+    color: #4ade80;
+    margin-bottom: 15px;
+}
+
+.lk-floating-card span {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.lk-floating-card h4 {
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.lk-floating-card p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* BENEFITS */
+
+.lk-benefits {
+    background: white;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.lk-benefit {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    height: 100%;
+}
+
+.lk-benefit > i {
+    font-size: 30px;
+    color: #16a34a;
+    background: #dcfce7;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
+
+.lk-benefit h5 {
+    font-weight: 750;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.lk-benefit p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* MATCHES */
+
+.lk-matches {
+    background: #f5f7fa;
+}
+
+.lk-section-label {
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.lk-section-title {
+    font-size: clamp(26px, 4vw, 35px);
+    font-weight: 800;
+    color: #172033;
+}
+
+.lk-see-all {
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.lk-see-all:hover {
+    color: #15803d;
+}
+
+.lk-match-card {
+    background: white;
+    border: 1px solid #e5eaf0;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 5px 20px rgba(15,23,42,.035);
+    transition: all .3s ease;
+}
+
+.lk-match-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15,23,42,.10);
+    border-color: #86efac;
+}
+
+.lk-match-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.lk-match-status {
+    font-size: 11px;
+    color: #15803d;
+    background: #dcfce7;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.lk-match-status span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #22c55e;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.lk-match-league {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.lk-match-date {
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.lk-team-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 28px 0 22px;
+}
+
+.lk-team {
+    text-align: center;
+    width: 40%;
+}
+
+.lk-team-logo {
+    width: 65px;
+    height: 65px;
+    margin: auto auto 12px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: linear-gradient(135deg,#14532d,#22c55e);
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(34,197,94,.2);
+}
+
+.lk-team-away {
+    background: linear-gradient(135deg,#172554,#3b82f6);
+}
+
+.lk-team h5 {
+    font-size: 14px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.lk-team small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.lk-vs {
+    color: #94a3b8;
+    font-size: 17px;
+    font-weight: 900;
+    background: #f1f5f9;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.lk-stadium {
+    padding: 13px 0;
+    border-top: 1px solid #edf0f4;
+    border-bottom: 1px solid #edf0f4;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.lk-stadium i {
+    color: #16a34a;
+    margin-right: 6px;
+}
+
+.lk-match-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.lk-match-bottom small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.lk-match-bottom h4 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #16a34a;
+    margin: 5px 0 0;
+}
+
+.lk-detail-btn {
+    background: #172033;
+    color: white;
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.lk-detail-btn:hover {
+    background: #22c55e;
+    color: #082416;
+    transform: translateX(3px);
+}
+
+.lk-empty {
+    text-align: center;
+    background: white;
+    border-radius: 18px;
+    padding: 55px 20px;
+    color: #64748b;
+}
+
+.lk-empty i {
+    font-size: 45px;
+    color: #94a3b8;
+}
+
+.lk-empty h5 {
+    margin-top: 15px;
+    color: #172033;
+    font-weight: 800;
+}
+
+/* CTA */
+
+.lk-cta {
+    background: #102033;
+    color: white;
+}
+
+.lk-cta h2 {
+    font-size: clamp(27px, 5vw, 42px);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.lk-cta h2 span {
+    color: #4ade80;
+}
+
+.lk-cta p {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .lk-hero,
+    .lk-hero .min-vh-75 {
+        min-height: auto;
+    }
+
+    .lk-hero {
+        padding: 45px 0;
+    }
+
+    .lk-hero-title {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .lk-hero-desc {
+        font-size: 15px;
+    }
+
+    .lk-hero-info {
+        gap: 22px;
+    }
+
+    .lk-benefit {
+        padding: 5px 0;
+    }
+
+    .lk-section-title {
+        font-size: 27px;
+    }
+
+    .lk-match-card {
+        padding: 19px;
+    }
+}
